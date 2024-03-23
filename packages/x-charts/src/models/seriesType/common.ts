@@ -9,7 +9,7 @@ export type CommonSeriesType<TValue> = {
   /**
    * Formatter used to render values in tooltip or other data display.
    * @param {TValue} value The series' value to render.
-   * @returns {string} The string to dispaly.
+   * @returns {string} The string to display.
    */
   valueFormatter?: <V extends TValue>(value: V) => string;
   highlightScope?: Partial<HighlightScope>;

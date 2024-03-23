@@ -38,9 +38,9 @@ export function getMinXTranslation(width: number, height: number, angle: number 
   }
 
   const radAngle = (standardAngle * Math.PI) / 180;
-  const angleSwich = Math.atan2(height, width);
+  const angleSwitch = Math.atan2(height, width);
 
-  if (radAngle < angleSwich) {
+  if (radAngle < angleSwitch) {
     return width / Math.cos(radAngle);
   }
   return height / Math.sin(radAngle);

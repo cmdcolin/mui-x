@@ -13,7 +13,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { pickersLayoutClasses } from '@mui/x-date-pickers/PickersLayout';
 
-const highlighLayout = {
+const highlightLayout = {
   sx: {
     [`& .${pickersLayoutClasses.toolbar}`]: {
       border: 'solid red 4px',
@@ -103,7 +103,7 @@ export default function LayoutBlocks() {
               <StaticDatePicker
                 orientation={orientation}
                 slotProps={{
-                  layout: highlighLayout,
+                  layout: highlightLayout,
                 }}
               />
             )}
@@ -113,7 +113,7 @@ export default function LayoutBlocks() {
                 <StaticTimePicker
                   orientation={orientation}
                   slotProps={{
-                    layout: highlighLayout,
+                    layout: highlightLayout,
                   }}
                 />
               </Box>
@@ -123,7 +123,7 @@ export default function LayoutBlocks() {
               <StaticDateTimePicker
                 orientation={orientation}
                 slotProps={{
-                  layout: highlighLayout,
+                  layout: highlightLayout,
                 }}
               />
             )}

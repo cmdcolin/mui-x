@@ -90,7 +90,7 @@ export default function ReverseExampleNoSnap() {
           <MarkPlot />
 
           <ChartsXAxis />
-          <ChartsYAxis axisId="leftAxis" label="temerature (°C)" />
+          <ChartsYAxis axisId="leftAxis" label="temperature (°C)" />
           <ChartsYAxis
             axisId="rightAxis"
             position="right"

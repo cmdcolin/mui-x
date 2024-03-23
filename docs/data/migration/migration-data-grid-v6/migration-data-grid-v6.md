@@ -109,7 +109,7 @@ If you need support for IE11, you will need to keep using the latest version of 
 The Data Grid's layout has been substantially altered to use CSS sticky positioned elements.
 As a result, the following changes have been made:
 
-- The main element now corresponds to the virtal scroller element.
+- The main element now corresponds to the virtual scroller element.
 - Headers are now contained in the virtual scroller.
 - Pinned row and column sections are now contained in the virtual scroller.
 - The cell inner wrapper `.MuiDataGrid-cellContent` has been removed.

@@ -5,10 +5,10 @@
  * If object is not null, path/value will be added respecting the other properties of the object.
  */
 export const addItemToObject = (path, value, object, j) => {
-  const splittedPath = path.split('.');
+  const splitPath = path.split('.');
 
   // Final case where we have to add the property to the object.
-  if (splittedPath.length === 1) {
+  if (splitPath.length === 1) {
     const propertyToAdd = j.objectProperty(j.identifier(path), value);
     if (object === null) {
       return j.objectExpression([propertyToAdd]);
@@ -20,8 +20,8 @@ export const addItemToObject = (path, value, object, j) => {
     ]);
   }
 
-  const remainingPath = splittedPath.slice(1).join('.');
-  const targetKey = splittedPath[0];
+  const remainingPath = splitPath.slice(1).join('.');
+  const targetKey = splitPath[0];
 
   if (object === null) {
     // Simplest case, no object to take into consideration

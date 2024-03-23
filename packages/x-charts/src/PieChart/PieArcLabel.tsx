@@ -11,7 +11,7 @@ import { PieItemId } from '../models/seriesType/pie';
 export interface PieArcLabelClasses {
   /** Styles applied to the root element. */
   root: string;
-  /** Styles applied to the root element when higlighted. */
+  /** Styles applied to the root element when highlighted. */
   highlighted: string;
   /** Styles applied to the root element when faded. */
   faded: string;

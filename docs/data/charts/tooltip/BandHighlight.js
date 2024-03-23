@@ -30,15 +30,15 @@ const barChartsParams = {
 };
 
 export default function BandHighlight() {
-  const [xHighlight, setXHightlight] = React.useState('band');
-  const [yHighlight, setYHightlight] = React.useState('none');
+  const [xHighlight, setXHighlight] = React.useState('band');
+  const [yHighlight, setYHighlight] = React.useState('none');
 
   const handleChange = (direction) => (event) => {
     if (direction === 'x') {
-      setXHightlight(event.target.value);
+      setXHighlight(event.target.value);
     }
     if (direction === 'y') {
-      setYHightlight(event.target.value);
+      setYHighlight(event.target.value);
     }
   };
 
@@ -57,7 +57,7 @@ export default function BandHighlight() {
         sx={{ m: 2 }}
       >
         <FormControl>
-          <FormLabel id="x-highlight-label">x highligh</FormLabel>
+          <FormLabel id="x-highlight-label">x highlight</FormLabel>
           <RadioGroup
             aria-labelledby="x-highlight-label"
             value={xHighlight}
@@ -69,7 +69,7 @@ export default function BandHighlight() {
           </RadioGroup>
         </FormControl>
         <FormControl>
-          <FormLabel id="y-highlight-label">y highligh</FormLabel>
+          <FormLabel id="y-highlight-label">y highlight</FormLabel>
           <RadioGroup
             aria-labelledby="y-highlight-label"
             value={yHighlight}

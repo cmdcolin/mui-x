@@ -7,7 +7,7 @@ function getPoint(angle: number): [number, number] {
 }
 
 /**
- * Retruns the ratio of the arc bounding box and its center.
+ * Returns the ratio of the arc bounding box and its center.
  * @param startAngle The start angle (in deg)
  * @param endAngle The end angle (in deg)
  */

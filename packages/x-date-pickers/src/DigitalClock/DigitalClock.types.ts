@@ -38,7 +38,7 @@ export interface DigitalClockProps<TDate extends PickerValidDate>
    */
   classes?: Partial<DigitalClockClasses>;
   /**
-   * Overrideable component slots.
+   * Overridable component slots.
    * @default {}
    */
   slots?: DigitalClockSlots;

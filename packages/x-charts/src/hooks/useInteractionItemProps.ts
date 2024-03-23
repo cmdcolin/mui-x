@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { InteractionContext } from '../context/InteractionProvider';
-import { HighlighContext, HighlightScope } from '../context/HighlightProvider';
+import { HighlightContext, HighlightScope } from '../context/HighlightProvider';
 import { SeriesItemIdentifier } from '../models';
 
 export const useInteractionItemProps = (scope?: Partial<HighlightScope>, skip?: boolean) => {
   const { dispatch: dispatchInteraction } = React.useContext(InteractionContext);
-  const { dispatch: dispatchHighlight } = React.useContext(HighlighContext);
+  const { dispatch: dispatchHighlight } = React.useContext(HighlightContext);
 
   if (skip) {
     return () => ({});

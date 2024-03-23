@@ -19,12 +19,12 @@ export interface GridColumnMenuSlotProps {
 
 export interface GridColumnMenuRootProps {
   /**
-   * Initial `slots` - it is internal, to be overrriden by Pro or Premium packages
+   * Initial `slots` - it is internal, to be overridden by Pro or Premium packages
    * @ignore - do not document.
    */
   defaultSlots: { [key: string]: React.JSXElementConstructor<any> };
   /**
-   * Initial `slotProps` - it is internal, to be overrriden by Pro or Premium packages
+   * Initial `slotProps` - it is internal, to be overridden by Pro or Premium packages
    * @ignore - do not document.
    */
   defaultSlotProps: { [key: string]: GridColumnMenuSlotProps };

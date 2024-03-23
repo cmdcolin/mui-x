@@ -52,7 +52,7 @@ export interface MultiSectionDigitalClockProps<TDate extends PickerValidDate>
    */
   classes?: Partial<MultiSectionDigitalClockClasses>;
   /**
-   * Overrideable component slots.
+   * Overridable component slots.
    * @default {}
    */
   slots?: MultiSectionDigitalClockSlots;

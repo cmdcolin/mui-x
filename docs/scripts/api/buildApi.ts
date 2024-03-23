@@ -40,7 +40,7 @@ export async function writePrettifiedFile(
 const bracketsRegexp = /\[\[([^\]]+)\]\]/g;
 
 /**
- * linkify all the [[...]] occurence by the documentedInterfaces if possible.
+ * linkify all the [[...]] occurrence by the documentedInterfaces if possible.
  * @param {string} directory
  * @param {DocumentedInterfaces} documentedInterfaces
  */

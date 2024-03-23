@@ -2095,7 +2095,7 @@ Same changes as in `@mui/x-date-pickers@7.0.0-alpha.3`.
 - [docs] Fix dead anchor link (#11265) @oliviertassinari
 - [docs] Improve Data Grid togglable columns example (#11238) @MBilalShafi
 - [docs] Improve the prop descriptions of `DayCalendar` (#11158) @flaviendelangle
-- [docs] Move the adapter breaking changes in a collapsable block (#11205) @flaviendelangle
+- [docs] Move the adapter breaking changes in a collapsible block (#11205) @flaviendelangle
 - [docs] Polish Next.js header description @oliviertassinari
 - [docs] Remove the `newFeature` flag on v6 features (#11168) @flaviendelangle
 - [docs] Simplify a bit chart demo (#11173) @oliviertassinari
@@ -2509,7 +2509,7 @@ And if you need the exact same output you can apply the following transformation
    const adapterDayjs = new AdapterDayjs();
    const adapterLuxon = new AdapterLuxon();
    const adapterDateFns = new AdapterDateFns();
-   const adapterMoment = new AdatperMoment();
+   const adapterMoment = new AdapterMoment();
 
    // Supported formats
    const isEqual = adapterDayjs.isEqual(null, null); // Same for the other adapters
@@ -2594,7 +2594,7 @@ And if you need the exact same output you can apply the following transformation
    const adapterDayjs = new AdapterDayjs();
    const adapterLuxon = new AdapterLuxon();
    const adapterDateFns = new AdapterDateFns();
-   const adapterMoment = new AdatperMoment();
+   const adapterMoment = new AdapterMoment();
 
    // Supported formats
    const isValid = adapterDayjs.isValid(null); // Same for the other adapters
@@ -4198,7 +4198,7 @@ Same changes as in `@mui/x-date-pickers@6.12.1`.
 
 ### Charts / `@mui/x-charts@6.0.0-alpha.9`
 
-- [charts] Move the line item highligh into a dedicated component (#10117) @alexfauquette
+- [charts] Move the line item highlight into a dedicated component (#10117) @alexfauquette
 
 ### Docs
 
@@ -5261,7 +5261,7 @@ We'd like to offer a big thanks to the 12 contributors who made this release pos
 - [core] Improve testing of the adapters (#8789) @flaviendelangle
 - [core] Update license key for tests (#8917) @LukasTy
 - [charts] Make introduction docs pages for each chart (#8869) @alexfauquette
-- [charts] Document Tooltip and Highlighs (#8867) @alexfauquette
+- [charts] Document Tooltip and Highlights (#8867) @alexfauquette
 - [test] Cover row grouping regression with a unit test (#8870) @cherniavskii
 - [test] Fix flaky regression tests (#8954) @cherniavskii
 
@@ -5297,7 +5297,7 @@ We'd like to offer a big thanks to the 7 contributors who made this release poss
 
 - [docs] Fix controlled mode demo on Editing page (#8800) @yaredtsy
 - [docs] Fix scrolling demo not working with React 18 (#6489) @cherniavskii
-- [docs] Update demo to support agregation on popular feature cell (#8617) @BalaM314
+- [docs] Update demo to support aggregation on popular feature cell (#8617) @BalaM314
 - [docs] Clarify what `<path>` is (#8764) @alexfauquette
 
 ### Core

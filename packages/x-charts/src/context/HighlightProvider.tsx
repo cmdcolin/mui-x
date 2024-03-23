@@ -5,7 +5,7 @@ export interface HighlightProviderProps {
   children: React.ReactNode;
 }
 
-export type ItemHighlighData<T extends ChartSeriesType> = ChartItemIdentifier<T>;
+export type ItemHighlightData<T extends ChartSeriesType> = ChartItemIdentifier<T>;
 
 export type HighlightOptions = 'none' | 'item' | 'series';
 export type FadeOptions = 'none' | 'series' | 'global';
@@ -28,39 +28,39 @@ export type HighlightScope = {
    */
   faded: FadeOptions;
 };
-type HighlighActions<T extends ChartSeriesType = ChartSeriesType> =
+type HighlightActions<T extends ChartSeriesType = ChartSeriesType> =
   | {
       type: 'enterItem';
-      item: ItemHighlighData<T>;
+      item: ItemHighlightData<T>;
       scope?: Partial<HighlightScope>;
     }
   | {
       type: 'leaveItem';
-      item: ItemHighlighData<T>;
+      item: ItemHighlightData<T>;
     };
 
-type HighlighState = {
+type HighlightState = {
   /**
    * The item that triggers the highlight state.
    */
-  item: null | ItemHighlighData<ChartSeriesType>;
+  item: null | ItemHighlightData<ChartSeriesType>;
   scope: HighlightScope;
-  dispatch: React.Dispatch<HighlighActions>;
+  dispatch: React.Dispatch<HighlightActions>;
 };
 
 const defaultScope: HighlightScope = { highlighted: 'none', faded: 'none' };
 
-export const HighlighContext = React.createContext<HighlighState>({
+export const HighlightContext = React.createContext<HighlightState>({
   item: null,
   scope: defaultScope,
   dispatch: () => null,
 });
 
 if (process.env.NODE_ENV !== 'production') {
-  HighlighContext.displayName = 'HighlighContext';
+  HighlightContext.displayName = 'HighlightContext';
 }
 
-const dataReducer: React.Reducer<Omit<HighlighState, 'dispatch'>, HighlighActions> = (
+const dataReducer: React.Reducer<Omit<HighlightState, 'dispatch'>, HighlightActions> = (
   prevState,
   action,
 ) => {
@@ -75,7 +75,7 @@ const dataReducer: React.Reducer<Omit<HighlighState, 'dispatch'>, HighlighAction
     case 'leaveItem':
       if (
         prevState.item === null ||
-        (Object.keys(action.item) as (keyof ItemHighlighData<ChartSeriesType>)[]).some(
+        (Object.keys(action.item) as (keyof ItemHighlightData<ChartSeriesType>)[]).some(
           (key) => action.item[key] !== prevState.item![key],
         )
       ) {
@@ -104,7 +104,7 @@ function HighlightProvider(props: HighlightProviderProps) {
     [data],
   );
 
-  return <HighlighContext.Provider value={value}>{children}</HighlighContext.Provider>;
+  return <HighlightContext.Provider value={value}>{children}</HighlightContext.Provider>;
 }
 
 export { HighlightProvider };

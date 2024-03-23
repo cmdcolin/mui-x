@@ -84,7 +84,7 @@ export const useGridInfiniteLoader = (
 
   const triggerRef = React.useCallback(
     (node: HTMLElement | null) => {
-      // Prevent the infite loading working in combination with lazy loading
+      // Prevent the infinite loading working in combination with lazy loading
       if (!isEnabled) {
         return;
       }
